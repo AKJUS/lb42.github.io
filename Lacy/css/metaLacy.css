@@ -69,14 +69,20 @@ font-size: 12pt;
   color: #00487D;
   background-color: #FFFFFF;
 }
+/* 
+<td><a href="ENG18400.html">ENG18400</a><a href="https://raw.githubusercontent.com/COST-ELTeC/ELTeC-eng/master/level1/ENG18400_Trollope.xml"><img src="../../media/teiLogo.jpg"></a></td>
+          */
+
+
+
+
+tei-div[type='work'] {
+ display: block;
+}
 
 
 tei-div[type='work']::before {
     content: "[" attr(xml\:id) "] ";
-}
-
-tei-div[type='work'] {
- display: block;
 }
 
   tei-div>tei-head {
